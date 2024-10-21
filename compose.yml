@@ -27,15 +27,15 @@ services:
       - ./dnsserver/conf/secundario/named.conf.local:/etc/bind/named.conf.local
 
 
-  skywalker:
+  eq1:
     build: ./debian
-    hostname: skywalker
+    hostname: eq1
     dns:
       - 192.168.20.10
       - 192.168.20.11
     networks:
       rededns:
-        ipv4_address: 192.168.20.101
+        ipv4_address: 192.168.20.100
 
 networks:
   rededns:
