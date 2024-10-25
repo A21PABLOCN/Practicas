@@ -22,8 +22,14 @@
 
 ![imagen10](./imaxes1.4/Captura10.png)
 ### 3. Fai que no equipo benswkywalker  se atope unha copia da zona starwars.lan, transferida desde darthvader.
+![imagen12](./imaxes1.4/Captura12.png)
+
 ![imagen11](./imaxes1.4/Captura11.png)
 
 ### 4. Fai que no equipo darthsidious se atope unha copia da zona academia.jedi transferida desde lukeskywalker.
+![imagen13](./imaxes1.4/Captura13.png)
 
+![imagen14](./imaxes1.4/Captura14.png)
+
+![imagen15](./imaxes1.4/Captura15.png)
 
