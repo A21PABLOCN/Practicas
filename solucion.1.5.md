@@ -16,6 +16,8 @@
 
 ![imagen4](./imaxes1.5/Captura4.png)
 
+![imagen15](./imaxes1.5/Captura15.png)
+
 ![imagen5](./imaxes1.5/Captura5.png)
 
 ### 3. Instala no equipo darthvader un subdominio chamado antigarepublica, e nel os rexistros:
