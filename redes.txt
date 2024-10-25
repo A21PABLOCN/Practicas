@@ -1,0 +1,5 @@
+# ejecutar este comando para que funcionen as comunicacions entre os contenedores debian
+# e as maquinas virtuales Windows
+sudo /sbin/vboxincus.sh vbox0 br-727e8b05027b
+#sudo /sbin/vboxincus.sh (a red de VB) (a red q se levanta cando se levantan as debian(cada vez e distinta))
+
