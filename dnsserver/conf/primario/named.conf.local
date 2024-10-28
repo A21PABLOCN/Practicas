@@ -15,6 +15,7 @@ zone "starwars.lan" {
     type master;
     file "db.starwars.lan";
     allow-transfer {key "chave1"; 192.168.20.102;};
+    allow-update {192.168.20.100;};
 };
 
 zone "20.168.192.in-addr.arpa" {
