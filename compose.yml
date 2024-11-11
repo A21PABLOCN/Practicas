@@ -12,6 +12,7 @@ services:
       - ./dnsserver/conf/primario/named.conf.local:/etc/bind/named.conf.local
       - ./dnsserver/conf/primario/db.starwars.lan:/var/cache/bind/db.starwars.lan
       - ./dnsserver/conf/primario/db.20.168.192:/var/cache/bind/db.20.168.192
+      - ./dnsserver/conf/primario/db.galaxia.lan:/var/cache/bind/db.galaxia.lan
 
 
   darthsidious:
@@ -50,6 +51,8 @@ services:
     networks:
       rededns:
         ipv4_address: 192.168.20.100
+    volumes:
+      - ./debian/conf/eq1/rndc.conf:/etc/bind/rndc.conf
 
 networks:
   rededns:

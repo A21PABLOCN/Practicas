@@ -19,8 +19,22 @@ options {
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
 	//========================================================================
 	dnssec-validation auto;
-
+	allow-new-zones yes;
 	listen-on-v6 { none; };
+};
+
+acl "rndc-users" {
+    192.168.20.100;
+};
+
+key "rndc-remote" {
+	algorithm hmac-sha256;
+	secret "JOEl4z2KFfj6DfW6uPai9N6nYESYnGnpxsmALMRLZPM=";
+};
+
+controls {
+    inet 127.0.0.1 allow { localhost; };
+    inet * port 7766 allow { "rndc-users"; } keys { "rndc-remote"; };
 };
 
 
@@ -39,3 +53,5 @@ logging {
 
     category update { update.log;  };
 };
+
+

@@ -9,5 +9,8 @@ RUN apt clean && rm -rf /var/lib/apt/lists/*
 RUN sed -i 's/^OPTIONS=.*/OPTIONS="-u bind -4"/' /etc/default/named 
 COPY entrypoint.sh ./entrypoint.sh
 
+RUN mkdir -p /var/log/named
+RUN chown bind:bind /var/log/named
+
 RUN chmod +x ./entrypoint.sh
 ENTRYPOINT [ "./entrypoint.sh" ]

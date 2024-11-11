@@ -11,11 +11,16 @@ key "chave1" {
 	secret "H3lYLIcnv1mGVKyJ9cY80te+KkbnSCPG1KaabFNQK3k=";
 };
 
+key "update-key" {
+	algorithm hmac-sha256;
+	secret "BWfQ/B1WEU5fkHlyY25Iu1xODYW+pfumNTecor/N3qo=";
+};
+
 zone "starwars.lan" {
     type master;
     file "db.starwars.lan";
     allow-transfer {key "chave1"; 192.168.20.102;};
-    allow-update {192.168.20.100;};
+    allow-update {key "update-key";};
 };
 
 zone "20.168.192.in-addr.arpa" {

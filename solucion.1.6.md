@@ -12,10 +12,23 @@ Con el comando dig starwars.lan axfr
 ![imagen4](./imaxes1.6/Captura4.png)
 
 # 3. Permite que o equipo darthvader poida ser controlado coa utilidade rndc desde un cliente ubuntu ou debian. Fai unha captura do servidor reiniciandose.
-
+![imagen5](./imaxes1.6/Captura5.png)
 
 # 4. Instala unha zona dinámica no servidor darthvader chamada galaxia.lan e introduce os rexistros aaylasecura (192.168.20.239) e yarua (192.168.20.238). Esta zona debe ser cargada mediante rndc, e o servidor reiniciado con rndc. Proba tamén a eliminala con rndc. Inclue capturas do resultado dos comandos, comprobando tamén que se poden facer consultas.
 
+![imagen6](./imaxes1.6/Captura6.png)
+
+![imagen7](./imaxes1.6/Captura7.png)
+
+![imagen8](./imaxes1.6/Captura8.png)
+
+![imagen9](./imaxes1.6/Captura9.png)
+
+![imagen10](./imaxes1.6/Captura10.png)
+
 # 5. Mediante a utilidade nsupdate, engade un rexistro chamado darthmaul (192.168.20.144) á zona starwars.lan empregando chaves.
 
+![imagen12](./imaxes1.6/Captura12.png)
+
+![imagen11](./imaxes1.6/Captura11.png)
 
